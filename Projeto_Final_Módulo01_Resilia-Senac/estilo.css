@@ -1,0 +1,266 @@
+body{
+    background: rgb(12, 15, 102);
+}
+
+#menu_conteiner {
+    border: solid 1px rgb(0, 0, 0);
+    height: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0.8px 1.5px 4px black;
+}
+
+.conteiner_titulo {
+    /* border: solid 1px black; */
+    height: 3.5rem;
+    position: absolute;
+    left: 2.5rem;
+    top: 0.75rem;
+    width: 40rem;
+}
+
+.conteiner_botao_menu {
+    border: 1px solid black;
+    height: 2rem;
+    margin: 1rem;
+    width: 8rem;
+    text-align: center;
+    background-color: rgb(12, 15, 102);
+    border-radius: 6px;
+    box-shadow: 0.8px 1.5px 4px black;
+}
+
+.botoes_menu {
+    border: solid 1px black;
+    margin-top: 2rem;
+}
+
+
+
+
+.conteiner_principal {
+    display: grid;
+    grid-template-columns: auto auto auto auto  ;
+    /*border: 1px solid red;*/
+    width: 92rem;
+    height: 48rem;  
+    margin-top: 2rem;
+    margin-left: 0rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0.8px 1.5px 4px black;
+}
+
+.principal_item {
+    margin: 20px;
+    box-shadow: 0.8px 1.5px 4px black;
+    border-radius: 8px;
+}
+
+#conteiner_descricao {
+  /*  border: black 1px solid;*/
+    position: absolute;
+    top: 6.7rem;
+    width: 25rem;
+    right: 0.5rem;
+    height: 30rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0.8px 1.5px 4px black;
+}
+
+#conteiner_carrinho {
+   /* border: 1px black solid;*/
+    height: 16.5rem;
+    position: absolute;
+    top: 38rem;
+    right: 0.5rem;
+    width: 25rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0.8px 1.5px 4px black;
+}
+
+#nome_produto {
+    
+    height: 5rem;
+    width: 22rem;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    box-shadow: 0.8px 1.5px 4px black;
+    border-radius: 8px;
+}
+
+#descricao_produto {
+    box-shadow: 0.8px 1.5px 4px black;
+    height: 20rem;
+    width: 22rem;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+}
+
+.contador_produtos {
+  /*  border: 1px yellowgreen solid;*/
+    width: 12rem;
+}
+
+input {
+    width: 3rem;
+}
+
+
+
+span {
+    border: solid 1px black;
+    width: 15rem;
+    height: 10rem;
+}
+
+.foto_produto {
+    height: 15rem;
+    position: absolute;
+    width: 18rem;
+    margin-left: 1.4rem;
+    margin-top: 1.4rem;
+    background-image: url("processador.jpg");
+    background-size: cover;
+}
+
+
+.foto_produto1 {
+    height: 15rem;
+    position: absolute;
+    width: 18rem;
+    margin-left: 1.4rem;
+    margin-top: 1.4rem; 
+    background-image: url("placa_de_video.jpg");
+    background-size: cover;
+}
+
+.foto_produto2 {
+    height: 15rem;
+    position: absolute;
+    width: 18rem;
+    margin-left: 1.4rem;
+    margin-top: 1.4rem; 
+    background-image: url("monitor.jpg");
+    background-size: cover;
+}
+
+.foto_produto3 {
+    height: 15rem;
+    position: absolute;
+    width: 18rem;
+    margin-left: 1.4rem;
+    margin-top: 1.4rem; 
+    background-image: url("ssd.jpg");
+    background-size: cover;
+}
+
+.foto_produto4 {
+    height: 15rem;
+    position: absolute;
+    width: 18rem;
+    margin-left: 1.4rem;
+    margin-top: 1.4rem; 
+    background-image: url("fonte.jpg");
+    background-size: cover;
+}
+
+.foto_produto5 {
+    height: 15rem;
+    position: absolute;
+    width: 18rem;
+    margin-left: 1.4rem;
+    margin-top: 1.4rem; 
+    background-image: url("placa_mae.jpg");
+    background-size: cover;
+}
+
+.foto_produto6 {
+    height: 15rem;
+    position: absolute;
+    width: 18rem;
+    margin-left: 1.4rem;
+    margin-top: 1.4rem; 
+    background-image: url("memoria.jpg");
+    background-size: cover;
+}
+
+.foto_produto7 {
+    height: 15rem;
+    position: absolute;
+    width: 18rem;
+    margin-left: 1.4rem;
+    margin-top: 1.4rem; 
+    background-image: url("cadeira.jpg");
+    background-size: cover;
+}
+
+.adicionar_car {
+    position: absolute;
+    margin-left: 2.4rem;
+    margin-top: 17rem;
+    width: 16rem;
+    height: 3rem;
+    background-color: rgb(32, 131, 32);
+    text-align: center;
+    border-radius: 3px;
+}
+.titulo_add_car {
+    position: absolute;
+    margin-top: 0.9rem;
+    left: 4.5rem;
+}
+
+#titulo {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    color: rgb(12, 15, 102);
+}
+
+#pagamentos {
+    text-align: center;
+    /* border: 1px black solid; */
+}
+
+h2 {
+    /* border: solid black 2px; */
+    margin-top: 0px;
+}
+
+img {
+    
+    width: 5rem;
+    height: 5rem;
+}
+
+#logo_pagamento {
+    display: flex;
+    justify-content: space-around;
+}
+
+#rede_sociais {
+    text-align: center;
+    /* border: 1px rgb(81, 255, 0) solid; */
+}
+
+#logo_redes{
+    /* border: 1px red solid; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0rem;
+}
+
+h3 {
+    /* border: solid black 2px; */
+    margin-top: -2px;
+}
+
+a {
+    color: white
+}

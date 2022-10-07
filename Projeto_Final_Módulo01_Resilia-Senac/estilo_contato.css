@@ -1,0 +1,236 @@
+body{
+    background: rgb(12, 15, 102);
+}
+
+section {
+    
+    display: flex;
+    justify-content: center;
+}
+
+#menu_conteiner {
+    border: solid 1px rgb(0, 0, 0);
+    height: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0.8px 1.5px 4px black;
+}
+
+.conteiner_titulo {
+    /* border: solid 1px black; */
+    height: 3.5rem;
+    position: absolute;
+    left: 2.5rem;
+    top: 0.75rem;
+    width: 40rem;
+}
+
+.conteiner_botao_menu {
+    border: 1px solid black;
+    height: 2rem;
+    margin: 1rem;
+    width: 8rem;
+    text-align: center;
+    background-color: rgb(12, 15, 102);
+    border-radius: 6px;
+    box-shadow: 0.8px 1.5px 4px black;
+}
+
+.botoes_menu {
+    border: solid 1px black;
+    margin-top: 2rem;
+}
+
+.conteiner_principal {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /*border: 1px solid red;*/
+    width: 35rem;
+    height: 48rem;  
+    margin-top: 2rem;
+    margin-left: 0rem;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0.8px 1.5px 4px black;
+}
+
+.principal_item {
+    margin: 20px;
+    box-shadow: 0.8px 1.5px 4px black;
+    background: white;
+    width: 32.5rem;
+}
+
+#conteiner_descricao {
+  /*  border: black 1px solid;*/
+    position: absolute;
+    top: 6.7rem;
+    width: 45rem;
+    right: 0.5rem;
+    height: 30rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0.8px 1.5px 4px black;
+}
+
+#conteiner_carrinho {
+   /* border: 1px black solid;*/
+    height: 16.5rem;
+    position: absolute;
+    top: 38rem;
+    right: 0.5rem;
+    width: 45rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0.8px 1.5px 4px black;
+}
+
+#nome_produto {
+    
+    height: 5rem;
+    width: 42rem;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    box-shadow: 0.8px 1.5px 4px black;
+}
+
+#descricao_produto {
+    box-shadow: 0.8px 1.5px 4px black;
+    height: 20rem;
+    width: 42rem;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.contador_produtos {
+  /*  border: 1px yellowgreen solid;*/
+    width: 12rem;
+}
+
+input {
+    width: 3rem;
+}
+
+
+
+span {
+    border: solid 1px black;
+    width: 15rem;
+    height: 10rem;
+}
+
+.foto_produto1 {
+    height: 15rem;
+    position: absolute;
+    width: 18rem;
+    margin-left: 1.4rem;
+    margin-top: 1.4rem; 
+    background-image: url("placa_de_video.jpg");
+    background-size: cover;
+}
+
+.foto_produto {
+    height: 15rem;
+    position: absolute;
+    width: 18rem;
+    margin-left: 1.4rem;
+    margin-top: 1.4rem;
+    background-image: url("placa_de_video.jpg");
+    background-size: cover;
+}
+
+
+
+
+.adicionar_car {
+    position: absolute;
+    margin-left: 2.4rem;
+    margin-top: 17rem;
+    width: 16rem;
+    height: 3rem;
+    background-color: rgb(32, 131, 32);
+    text-align: center;
+    border-radius: 3px;
+}
+.titulo_add_car {
+    position: absolute;
+    margin-top: 0.9rem;
+    left: 4.5rem;
+}
+
+#titulo {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    color: rgb(12, 15, 102);
+}
+
+a {
+    color: white
+}
+
+#area
+{
+  position:relative;
+  left:37%;
+  top:10em;
+  width:320px;
+  height:270px;
+}
+#area #formulario
+{
+  position:absolute;
+  display:block;
+}
+
+
+fieldset
+{
+  background-color:#A7C0DC;
+  width:300px;
+  height:250px;
+}
+legend
+{
+  font-weight:bold;
+  font-family: "Segoe UI","Arial","Times New Roman";
+}
+#formulario label
+{
+  position:absolute;
+  left:19px;
+  margin-right:5px;
+}
+#formulario input.campo_nome
+{
+  background-color:#f1ff00;
+  position:absolute;
+  left:95px;
+  top:23px;
+  width:225px;
+}
+#formulario input.campo_email
+{
+  background-color:#f1ff00;
+  position:absolute;
+  left:95px;
+  margin-top:2px;
+  width:225px;
+}
+#formulario textarea.msg
+{
+  position:absolute;
+  background-color:#f1ff00;
+}
+
+
+#formulario input.btn_submit
+{
+  border-style:dashed;
+  position: relative;;
+  bottom: 0.5em;
+  right:10px;
+  background-color:#f1ff00;
+}

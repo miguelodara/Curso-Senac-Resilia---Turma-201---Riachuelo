@@ -1,0 +1,206 @@
+body{
+    background: rgb(12, 15, 102);
+}
+
+section {
+    
+    display: flex;
+    justify-content: center;
+}
+
+#menu_conteiner {
+    border: solid 1px rgb(0, 0, 0);
+    height: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0.8px 1.5px 4px black;
+}
+
+.conteiner_titulo {
+    /* border: solid 1px black; */
+    height: 3.5rem;
+    position: absolute;
+    left: 2.5rem;
+    top: 0.75rem;
+    width: 40rem;
+}
+
+.conteiner_botao_menu {
+    border: 1px solid black;
+    height: 2rem;
+    margin: 1rem;
+    width: 8rem;
+    text-align: center;
+    background-color: rgb(12, 15, 102);
+    border-radius: 6px;
+    box-shadow: 0.8px 1.5px 4px black;
+}
+
+.botoes_menu {
+    border: solid 1px black;
+    margin-top: 2rem;
+}
+
+
+.conteiner_principal {
+    display: grid;
+    grid-template-columns: auto auto;
+    /*border: 1px solid red;*/
+    width: 46rem;
+    height: 48rem;  
+    margin-top: 2rem;
+    margin-left: 0rem;
+    background: rgb(12, 15, 102);
+   
+    
+}
+
+.principal_item {
+    margin: 20px;
+    box-shadow: 0.8px 1.5px 4px black;
+    background: white;
+    border-radius: 10px;
+}
+
+#conteiner_descricao {
+  /*  border: black 1px solid;*/
+    position: absolute;
+    top: 6.7rem;
+    width: 45rem;
+    right: 0.5rem;
+    height: 30rem;
+    background: white;
+    border-radius: 10px;
+}
+
+#conteiner_carrinho {
+   /* border: 1px black solid;*/
+    height: 16.5rem;
+    position: absolute;
+    top: 38rem;
+    right: 0.5rem;
+    width: 45rem;
+    background: white;
+    border-radius: 10px;
+    
+}
+
+#nome_produto {
+    
+    height: 5rem;
+    width: 42rem;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    box-shadow: 0.8px 1.5px 4px black;
+}
+
+#descricao_produto {
+    box-shadow: 0.8px 1.5px 4px black;
+    height: 20rem;
+    width: 42rem;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.contador_produtos {
+  /*  border: 1px yellowgreen solid;*/
+    width: 12rem;
+}
+
+input {
+    width: 3rem;
+}
+
+
+
+span {
+    border: solid 1px black;
+    width: 15rem;
+    height: 10rem;
+}
+
+.foto_isadora {
+    height: 15rem;
+    position: absolute;
+    width: 18rem;
+    margin-left: 1.4rem;
+    margin-top: 1.4rem;
+    background-image: url("isadora.jpeg");
+    background-size: cover;
+    border-radius: 10%;
+    box-shadow: 0.8px 1.5px 4px black;
+    /* border: 2px rgb(235, 77, 4) solid; */
+}
+
+.foto_alvaro {
+    height: 15rem;
+    position: absolute;
+    width: 18rem;
+    margin-left: 1.4rem;
+    margin-top: 1.4rem;
+    background-image: url("alvaro.jpg");
+    background-size: cover;
+    border-radius: 10%;
+    box-shadow: 0.8px 1.5px 4px black;
+}
+
+.foto_yuri {
+    height: 15rem;
+    position: absolute;
+    width: 18rem;
+    margin-left: 1.4rem;
+    margin-top: 1.4rem;
+    background-image: url("yuri.jpg");
+    background-size: cover;
+    border-radius: 10%;
+    box-shadow: 0.8px 1.5px 4px black;
+}
+
+.adicionar_car {
+    position: absolute;
+    text-align: center;
+    margin-left: 2.4rem;
+    margin-top: 17rem;
+    width: 16rem;
+    height: 3rem;
+    background: rgb(12, 15, 102);
+    color: aliceblue;
+    text-align: center;
+    border-radius: 3px;
+    /* border: 1px rgb(0, 0, 0) solid; */
+}
+.titulo_add_car {
+    position: absolute;
+    margin-top: 0.9rem;
+    left: 1rem;
+    /* border: 1px rgb(0, 0, 0) solid; */
+    text-align: center;
+    
+}
+
+/*.texto_conteiner {
+    border: 1px solid black;
+    height: 18rem;
+    margin-top: 5rem;
+    color: black;
+}*/
+
+.texto {
+    /* border: 1px solid black; */
+    height: 18rem;
+    margin-top: 5rem;
+    color: black;
+}
+
+#titulo {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    color: rgb(12, 15, 102);
+}
+
+a {
+    color: white
+}
