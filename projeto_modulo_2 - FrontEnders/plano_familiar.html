@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/planos.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+        <div class="container_corpo">
+            <div class="container_pesquisa">
+                <div class="logo"><img src="img/Nova pasta/twitter_header_photo_1.png" alt=""></div>
+                <div class="pesquisa"><input type="text" placeholder="Faça sua busca aqui."><img src="img/procurar.png" alt=""></div>
+                <div class="entrar"><a href="portal_cliente.html" id="buttom_entrar">Entrar</a></div>
+            </div>
+            <div class="container_menu">
+                <div class="container_menu_buttom"><a href="index.html" class="buttom_menu">Início</a></div>
+                <div class="container_menu_buttom" id="planos_botao"><a href="" id="buttom_planos" class="buttom_menu">Cursos</a>
+                    <div class="menu_planos" id="menu_planos">
+                        <div><p><a href="plano_individual.html">Linguagem de Programação</a></p></div>
+                        <div><p><a href="plano_familiar.html">Desenvolvimento de Banco de Dados</a></p></div>
+                        <div><p><a href="dev_mobile.html">Desenvolvimento Mobile</a></p></div>
+                    </div></div>
+                    <div class="container_menu_buttom" id="botao_sac"><a href=""  id="buttom_sac" class="buttom_menu">Fale Conosco</a>
+                        <div class="menu_planos" id="menu_planos">
+                            <div><p><a href="telefones.html">Telefones</a></p></div>
+                        <div><p><a href="endereco.html">Endereço</a></p></div>
+                        <div><p><a href="ouvidoria.html">Ouvidoria</a></p></div>
+                        </div>
+                    </div>
+                <div class="container_menu_buttom"><a href="quem_somos.html" class="buttom_menu">Quem Somos</a></div>
+            </div>
+            <div class="container_info">
+                <div class="card_plano" id="card_06"><div class="card_plano_imagem"><img src="img/mysql.png" alt=""></div><div class="card_plano_buttom"><div class="buttom_detalhe"  onclick="detalhe6()"><p>DETALHES</p></div></div></div>
+                <div class="card_plano" id="card_07"><div class="card_plano_imagem"><img src="img/oracle.png" alt=""></div><div class="card_plano_buttom"><div class="buttom_detalhe" onclick="detalhe7()"><p>DETALHES</p></div></div></div>
+                <div class="card_plano" id="card_08"><div class="card_plano_imagem"><img src="img/postgre.png" alt=""></div><div class="card_plano_buttom"><div class="buttom_detalhe" onclick="detalhe8()"><p>DETALHES</p></div></div></div>
+            </div>  
+            <div class="container_planos">
+                <div class="container_descricao_planos">
+                    <div id="01"></div>
+                    
+                    <button onclick="openModal('dv-modal');" id="buttom_value">CONTRATAR</button>
+                </div>
+                
+            </div>
+            <div id="dv-modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1>Preencha seus dados</h1>
+
+                    </div>
+                    <hr>
+
+                    <div class="modal-body">
+                        <div id="desc.">
+                            <p class="texto_modal">Olá futuro beneficiário, ficamos felizes que você queira fazer parte da nossa família ResiSaúde. Para que possa contratar um de nossos serviços, solicito que preencha os campos ao lado corretamente para que possamos entrar em contato de forma imediata para permitimos a contratação do plano desejado e que mais breve possível possa estar utilizando nossos serviços.</p>
+                        </div>
+                        <div class="input_modal">
+                        <div>
+                            <p>Nome</p>
+                            <input type="text" name="" id="" placeholder="Nome e sobrenome">
+                        </div>
+                        <div>
+                            <p>E-mail</p>
+                            <input type="email" placeholder="name@exemplo.com.br">
+                        </div>
+                        <div>
+                            <p>Telefone</p>
+                            <input type="number" name="" id="" placeholder="(XX) XXXXX-XXXX">
+                        </div>
+                    </div>
+
+                    </div>
+                    <hr>
+                    <div class="modal-buttom">
+                        <button onclick="closeModal('dv-modal');" id="buttom_voltar">VOLTAR</button>
+                        <button id="buttom_voltar">ENVIAR</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="menu_planos" id="menu_planos">
+                <div><p>INDIVIDUAL</p></div>
+                <div><p>FAMILIAR</p></div>
+                <div><p>EMPRESARIAL</p></div>
+            </div>
+            <div class="menu_sac" id="menu_sac">
+                <div><p>TELEFONES</p></div>
+                <div><p>ENDEREÇO</p></div>
+                <div><p>FALE CONOSCO</p></div>
+            </div>
+
+    </div>
+    <script src="script_planos.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
+
+
+.container_login {
+    width: 100vw; /*100% viewport da largura(width)*/
+    height: 100vh; /*100% viewport da altura(height)*/
+    background: #5cc2f2;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.login {
+    width: 25rem;
+    height: 20rem;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 11px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Sora', sans-serif;
+    font-size: 90%;
+}
+
+#titulo {
+    text-align: center;
+    font-size: 35px;
+    padding: 0px;
+    margin: 0px;
+    color: #191ba9;
+    font-family: 'Sora', sans-serif;
+}
+
+input {
+    width: 16rem;
+    height: 1.5rem;
+    margin: 0px;
+    outline: none;   
+}
+#email {    
+    margin: 0px;    
+}
+#senha {
+    margin: 0px;
+}
+
+.login p a {
+    text-decoration: none;
+}

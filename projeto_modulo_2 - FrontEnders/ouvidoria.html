@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" >
+    
+        function limpa_formulário_cep() {
+                //Limpa valores do formulário de cep.
+                document.getElementById('rua').value=("");
+                document.getElementById('bairro').value=("");
+                document.getElementById('cidade').value=("");
+                document.getElementById('uf').value=("");
+                document.getElementById('ibge').value=("");
+        }
+    
+        function meu_callback(conteudo) {
+            if (!("erro" in conteudo)) {
+                //Atualiza os campos com os valores.
+                document.getElementById('rua').value=(conteudo.logradouro);
+                document.getElementById('bairro').value=(conteudo.bairro);
+                document.getElementById('cidade').value=(conteudo.localidade);
+                document.getElementById('uf').value=(conteudo.uf);
+                
+            } //end if.
+            else {
+                //CEP não Encontrado.
+                limpa_formulário_cep();
+                alert("CEP não encontrado.");
+            }
+        }
+            
+        function pesquisacep(valor) {
+    
+            //Nova variável "cep" somente com dígitos.
+            var cep = valor.replace(/\D/g, '');
+    
+            //Verifica se campo cep possui valor informado.
+            if (cep != "") {
+    
+                //Expressão regular para validar o CEP.
+                var validacep = /^[0-9]{8}$/;
+    
+                //Valida o formato do CEP.
+                if(validacep.test(cep)) {
+    
+                    //Preenche os campos com "..." enquanto consulta webservice.
+                    document.getElementById('rua').value="...";
+                    document.getElementById('bairro').value="...";
+                    document.getElementById('cidade').value="...";
+                    document.getElementById('uf').value="...";
+                    
+    
+                    //Cria um elemento javascript.
+                    var script = document.createElement('script');
+    
+                    //Sincroniza com o callback.
+                    script.src = '//viacep.com.br/ws/'+ cep + '/json/?callback=meu_callback';
+    
+                    //Insere script no documento e carrega o conteúdo.
+                    document.body.appendChild(script);
+    
+                } //end if.
+                else {
+                    //cep é inválido.
+                    limpa_formulário_cep();
+                    alert("Formato de CEP inválido.");
+                }
+            } //end if.
+            else {
+                //cep sem valor, limpa formulário.
+                limpa_formulário_cep();
+            }
+        };
+    
+    
+        </script>
+    <link rel="stylesheet" href="css/planos.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+        <div class="container_corpo">
+            <div class="container_pesquisa">
+                <div class="logo"><img src="img/Nova pasta/twitter_header_photo_1.png" alt=""></div>
+                <div class="pesquisa"><input type="text" placeholder="Faça sua busca aqui."><img src="img/procurar.png" alt=""></div>
+                <div class="entrar"><a href="portal_cliente.html" id="buttom_entrar">Entrar</a></div>
+            </div>
+            <div class="container_menu">
+                <div class="container_menu_buttom"><a href="index.html" class="buttom_menu">Início</a></div>
+                <div class="container_menu_buttom" id="planos_botao"><a href="" id="buttom_planos" class="buttom_menu">Cursos</a>
+                    <div class="menu_planos" id="menu_planos">
+                        <div><p><a href="plano_individual.html">Linguagem de Programação</a></p></div>
+                        <div><p><a href="plano_familiar.html">Desenvolvimento de Banco de Dados</a></p></div>
+                        <div><p><a href="plano_individual.html">Desenvolvimento Mobile</a></p></div>
+                    </div>
+                </div>
+                <div class="container_menu_buttom" id="botao_sac"><a href=""  id="buttom_sac" class="buttom_menu">Fale Conosco</a>
+                    <div class="menu_planos" id="menu_planos">
+                        <div><p><a href="telefones.html">Telefones</a></p></div>
+                        <div><p><a href="endereco.html">Endereço</a></p></div>
+                        <div><p><a href="ouvidoria.html">Ouvidoria</a></p></div>
+                    </div>
+                </div>
+                <div class="container_menu_buttom"><a href="quem_somos.html" class="buttom_menu">Quem Somos</a></div>
+            </div>
+            <div class="container_info_ouvidoria">
+                    <div class="container_form_ouvidoria">
+                        <div class="container_imagem_ouvidoria"><img src="img/Nova pasta/pinterest_board_photo.png" alt=""></div>
+                        <div class="container_form_ouvidoria_int">
+                            <div class="form_titulo">Central de Ouvidoria</div>
+                            <hr>
+                            <div class="form_input_ouv">
+                                <p>Nome completo</p>
+                                <input type="text" name="nome" id="nome">
+                                <p>Cep</p>
+                                <input type="number" name="cep" id="cep" value="" maxlength="9" onblur="pesquisacep(this.value);">
+                                <p>Logradouro</p>
+                                <input type="text" name="rua" id="rua" readonly="">
+                                <p>Bairro</p>
+                                <input type="text" name="bairro" id="bairro" readonly="">
+                               <p>Cidade</p>
+                                    <input type="text" name="cidade" id="cidade" readonly="">
+                                    <p>UF</p>
+                                    <input type="text" name="" id="" readonly="">
+                                    <p>Telefone</p>
+                                    <input type="text" name="" id="" readonly="">
+                                    <p>Reclamação</p>
+                                    <input type="text" name="" id="reclamacao" readonly="">
+                            </div>
+                            <br>
+                            <hr>
+                            <div class="botao_ouvidoria">
+                                <button id="botao_ouvidoria">ENCAMINHAR </button>
+                            </div>
+                        </div>
+                    </div>
+               
+            </div>  
+           
+    </div>
+    <!-- <script src="script_planos.js"></script> -->
+</body>
+</html>
